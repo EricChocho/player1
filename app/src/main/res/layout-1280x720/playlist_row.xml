@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:id="@+id/playrowly"
+        android:layout_width="match_parent"
+        android:layout_height="43px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/playrowID"
+            android:layout_width="43px"
+            android:layout_height="43px"
+
+            android:layout_marginStart="17px"
+            android:layout_marginTop="10px"
+
+            android:layout_weight="0"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="01"
+            android:textColor="#FAF6E5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/playicon"
+            android:layout_width="20px"
+            android:layout_height="20px"
+
+            android:layout_marginStart="17px"
+            android:layout_marginTop="10px"
+            android:layout_marginEnd="22px"
+            android:layout_weight="0"
+            android:visibility="gone"
+            app:srcCompat="@drawable/playbt" />
+
+        <TextView
+            android:id="@+id/playrowName"
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginStart="5px"
+            android:layout_marginTop="0px"
+            android:layout_weight="0"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Filename.mp4"
+            android:textColor="#FAF6E5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/playrowTime"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="30px"
+            android:layout_marginTop="0px"
+            android:layout_marginEnd="0px"
+            android:layout_marginRight="1px"
+            android:layout_weight="0"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Filename.mp4"
+            android:textColor="#FAF6E5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

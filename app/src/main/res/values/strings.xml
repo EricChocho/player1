@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Media Player</string>
+    <string name="app_title">Media Player</string>
+    <string name="file_list">File List</string>
+</resources>

@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="1920px"
+            android:layout_height="1080px"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/background" />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="1920px"
+            android:layout_height="1080px"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="644px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="650px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/audiopic"
+                    android:layout_width="650px"
+                    android:layout_height="650px"
+                    android:layout_marginTop="70px"
+                    app:srcCompat="@drawable/audio2" />
+
+                <TextView
+                    android:id="@+id/AudioName"
+                    android:layout_width="204px"
+                    android:layout_height="87px"
+                    android:layout_marginStart="223px"
+                    android:layout_marginTop="31px"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="INTRO"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/AudioMan"
+                    android:layout_width="133px"
+                    android:layout_height="36px"
+                    android:layout_marginStart="258.5px"
+                    android:layout_marginTop="10px"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="瘦子E.SO"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout2A"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="920px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SpeedTx_A"
+                    android:layout_width="90px"
+                    android:layout_height="90px"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:layout_weight="0"
+                    android:text="2X" />
+
+                <LinearLayout
+                    android:id="@+id/ListLayout_A"
+                    android:layout_width="600px"
+                    android:layout_height="878px"
+                    android:layout_marginStart="1150px"
+                    android:layout_marginTop="42px"
+                    android:background="@drawable/playlist_bk2"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textView6_A"
+                        android:layout_width="135px"
+                        android:layout_height="50px"
+                        android:layout_marginStart="30px"
+                        android:layout_marginTop="30px"
+                        android:text="PlayList"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/iconlayout_A"
+                        android:layout_width="374px"
+                        android:layout_height="86px"
+                        android:layout_marginStart="40px"
+                        android:layout_marginTop="28px"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/Playlistb1_A"
+                            android:layout_width="86px"
+                            android:layout_height="86px"
+
+                            android:layout_weight="0"
+                            android:background="@drawable/pb1"
+                            android:nextFocusLeft="@id/minilistbt_A"
+                            android:nextFocusRight="@id/Playlistb2_A"
+                            android:nextFocusDown="@id/minilistbt_A"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <Button
+                            android:id="@+id/Playlistb2_A"
+                            android:layout_width="86px"
+                            android:layout_height="86px"
+                            android:layout_marginStart="10px"
+                            android:layout_weight="0"
+                            android:background="@drawable/pb2"
+                            android:nextFocusLeft="@id/Playlistb1_A"
+                            android:nextFocusRight="@id/Playlistb3_A"
+                            android:nextFocusDown="@id/minilistbt_A" />
+
+                        <Button
+                            android:id="@+id/Playlistb3_A"
+                            android:layout_width="86px"
+                            android:layout_height="86px"
+                            android:layout_marginStart="10px"
+                            android:layout_weight="0"
+                            android:background="@drawable/pb3"
+                            android:nextFocusLeft="@id/Playlistb2_A"
+                            android:nextFocusRight="@id/Playlistb1_A"
+                            android:nextFocusUp="@id/minilistbt_A"
+                            android:nextFocusDown="@id/minilistbt_A" />
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/smallplaylistview_A"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:nextFocusLeft="@id/minilistbt_A"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/PlaybuttonLayout_A"
+                    android:layout_width="426px"
+                    android:layout_height="100px"
+                    android:layout_marginStart="42px"
+                    android:background="@drawable/bk_play"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/fbbt_A"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="25px"
+                        android:layout_marginTop="28px"
+                        android:layout_weight="0"
+                        android:background="@drawable/fbbt"
+                        android:nextFocusLeft="@id/minilistbt_A"
+                        android:nextFocusRight="@id/lastbt_A"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/lastbt_A"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="24px"
+                        android:layout_marginTop="28px"
+                        android:layout_weight="0"
+                        android:background="@drawable/lastbt_2"
+                        android:nextFocusLeft="@id/fbbt_A"
+                        android:nextFocusRight="@id/playbt_A"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/playbt_A"
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_marginStart="24px"
+                        android:layout_marginTop="25px"
+                        android:layout_weight="0"
+                        android:background="@drawable/playbt_2"
+                        android:nextFocusLeft="@id/lastbt_A"
+                        android:nextFocusRight="@id/nextbt_A"
+                        android:nextFocusUp="@id/playbt_A"
+                        android:nextFocusDown="@id/playbt_A"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/nextbt_A"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="24px"
+                        android:layout_marginTop="28px"
+                        android:layout_weight="0"
+                        android:background="@drawable/nextbt_2"
+
+                        android:nextFocusLeft="@id/playbt_A"
+                        android:nextFocusRight="@id/ffbt_A"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/ffbt_A"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="24px"
+                        android:layout_marginTop="28px"
+                        android:layout_weight="0"
+                        android:background="@drawable/ffbt"
+
+
+                        android:nextFocusLeft="@id/nextbt_A"
+                        android:nextFocusRight="@id/minilistbt_A"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/PlayTimeLayout_A"
+                    android:layout_width="1406px"
+                    android:layout_height="100px"
+                    android:layout_marginStart="28px"
+                    android:background="@drawable/bk_time">
+
+                    <TextView
+                        android:id="@+id/time1_A"
+                        android:layout_width="120px"
+                        android:layout_height="42px"
+                        android:layout_marginStart="30px"
+                        android:layout_marginTop="29px"
+                        android:text="01:02:52"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/timeBar_A"
+                        android:layout_width="730px"
+                        android:layout_height="12px"
+                        android:layout_marginStart="41px"
+                        android:layout_marginTop="45px"
+                        android:focusable="false"
+
+                        android:overScrollMode="never" />
+
+                    <TextView
+                        android:id="@+id/time2_A"
+                        android:layout_width="120px"
+                        android:layout_height="42px"
+                        android:layout_marginStart="41px"
+                        android:layout_marginTop="29px"
+                        android:text="01:02:52"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/minilistbt_A"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="41px"
+                        android:layout_marginTop="28.5px"
+                        android:layout_weight="0"
+                        android:background="@drawable/minilistbt"
+                        android:focusable="auto"
+                        android:nextFocusLeft="@id/ffbt_A"
+                        android:nextFocusRight="@id/minilistbt_A"
+                        android:nextFocusUp="@id/Playlistb1_A"
+                        android:nextFocusDown="@id/minilistbt_A" />
+
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="920px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SpeedTx"
+                    android:layout_width="90px"
+                    android:layout_height="90px"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:layout_weight="0"
+                    android:text="2X" />
+
+                <LinearLayout
+                    android:id="@+id/ListLayout"
+                    android:layout_width="600px"
+                    android:layout_height="878px"
+                    android:layout_marginStart="1150px"
+                    android:layout_marginTop="42px"
+                    android:background="@drawable/playlist_bk2"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="135px"
+                        android:layout_height="50px"
+                        android:layout_marginStart="30px"
+                        android:layout_marginTop="30px"
+                        android:text="PlayList"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/iconlayout"
+                        android:layout_width="374px"
+                        android:layout_height="86px"
+                        android:layout_marginStart="40px"
+                        android:layout_marginTop="28px"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/Playlistb1"
+                            android:layout_width="86px"
+                            android:layout_height="86px"
+
+                            android:layout_weight="0"
+                            android:background="@drawable/pb1"
+                            android:nextFocusLeft="@id/minilistbt"
+                            android:nextFocusRight="@id/Playlistb2"
+                            android:nextFocusDown="@id/minilistbt"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <Button
+                            android:id="@+id/Playlistb2"
+                            android:layout_width="86px"
+                            android:layout_height="86px"
+                            android:layout_marginStart="10px"
+                            android:layout_weight="0"
+                            android:background="@drawable/pb2"
+                            android:nextFocusLeft="@id/Playlistb1"
+                            android:nextFocusRight="@id/Playlistb3"
+                            android:nextFocusDown="@id/minilistbt" />
+
+                        <Button
+                            android:id="@+id/Playlistb3"
+                            android:layout_width="86px"
+                            android:layout_height="86px"
+                            android:layout_marginStart="10px"
+                            android:layout_weight="0"
+                            android:background="@drawable/pb3"
+                            android:nextFocusLeft="@id/Playlistb2"
+                            android:nextFocusRight="@id/Playlistb1"
+                            android:nextFocusUp="@id/minilistbt"
+                            android:nextFocusDown="@id/minilistbt" />
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/smallplaylistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:nextFocusLeft="@id/minilistbt"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/PlaybuttonLayout"
+                    android:layout_width="426px"
+                    android:layout_height="100px"
+                    android:layout_marginStart="42px"
+                    android:background="@drawable/bk_play"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/fbbt"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="25px"
+                        android:layout_marginTop="28px"
+                        android:layout_weight="0"
+                        android:background="@drawable/fbbt"
+                        android:nextFocusLeft="@id/minilistbt"
+                        android:nextFocusRight="@id/lastbt"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/lastbt"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="24px"
+                        android:layout_marginTop="28px"
+                        android:layout_weight="0"
+                        android:background="@drawable/lastbt_2"
+                        android:nextFocusLeft="@id/fbbt"
+                        android:nextFocusRight="@id/playbt"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/playbt"
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_marginStart="24px"
+                        android:layout_marginTop="25px"
+                        android:layout_weight="0"
+                        android:background="@drawable/playbt_2"
+                        android:nextFocusLeft="@id/lastbt"
+                        android:nextFocusRight="@id/nextbt"
+                        android:nextFocusUp="@id/playbt"
+                        android:nextFocusDown="@id/playbt"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/nextbt"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="24px"
+                        android:layout_marginTop="28px"
+                        android:layout_weight="0"
+                        android:background="@drawable/nextbt_2"
+
+                        android:nextFocusLeft="@id/playbt"
+                        android:nextFocusRight="@id/ffbt"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:id="@+id/ffbt"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="24px"
+                        android:layout_marginTop="28px"
+                        android:layout_weight="0"
+                        android:background="@drawable/ffbt"
+
+
+                        android:nextFocusLeft="@id/nextbt"
+                        android:nextFocusRight="@id/minilistbt"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/PlayTimeLayout"
+                    android:layout_width="1406px"
+                    android:layout_height="100px"
+                    android:layout_marginStart="28px"
+                    android:background="@drawable/bk_time">
+
+                    <TextView
+                        android:id="@+id/time1"
+                        android:layout_width="120px"
+                        android:layout_height="42px"
+                        android:layout_marginStart="30px"
+                        android:layout_marginTop="29px"
+                        android:text="01:02:52"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/timeBar"
+                        android:layout_width="730px"
+                        android:layout_height="12px"
+                        android:layout_marginStart="41px"
+                        android:layout_marginTop="45px"
+                        android:focusable="false"
+
+                        android:overScrollMode="never" />
+
+                    <TextView
+                        android:id="@+id/time2"
+                        android:layout_width="120px"
+                        android:layout_height="42px"
+                        android:layout_marginStart="41px"
+                        android:layout_marginTop="29px"
+                        android:text="01:02:52"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/minilistbt"
+                        android:layout_width="43px"
+                        android:layout_height="43px"
+                        android:layout_marginStart="41px"
+                        android:layout_marginTop="28.5px"
+                        android:layout_weight="0"
+                        android:background="@drawable/minilistbt"
+                        android:focusable="auto"
+                        android:nextFocusLeft="@id/ffbt"
+                        android:nextFocusRight="@id/minilistbt"
+                        android:nextFocusUp="@id/Playlistb1"
+                        android:nextFocusDown="@id/minilistbt" />
+
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout1"
+            android:layout_width="1920px"
+            android:layout_height="1080px"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/TitleLayout"
+                android:layout_width="1920px"
+                android:layout_height="150px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titleTV"
+                    android:layout_width="225dp"
+                    android:layout_height="90px"
+                    android:layout_marginStart="130px"
+                    android:layout_marginTop="60px"
+                    android:text="@string/app_title"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FAF6E5"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="546px"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/iconlayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="141px"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/storageIcon"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginStart="120px"
+                            android:layout_marginTop="0px"
+                            app:srcCompat="@drawable/storage_default" />
+
+                        <TextView
+                            android:id="@+id/storageText"
+                            android:layout_width="350px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20px"
+                            android:layout_marginTop="0px"
+                            android:text="Local Storage"
+                            android:textColor="#FAF6E5"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/iconlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="86px"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/usbicon1"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginStart="120px"
+                            android:layout_marginTop="0px"
+                            app:srcCompat="@drawable/usb_default" />
+
+                        <TextView
+                            android:id="@+id/usb1Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20px"
+                            android:layout_marginTop="0px"
+                            android:text="USB1"
+                            android:textColor="#FAF6E5"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/iconlayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="86px"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/usbicon2"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginStart="120px"
+                            android:layout_marginTop="0px"
+                            app:srcCompat="@drawable/usb_default" />
+
+                        <TextView
+                            android:id="@+id/usb1Text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20px"
+                            android:layout_marginTop="0px"
+                            android:text="USB2"
+                            android:textColor="#FAF6E5"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/iconlayout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="86px"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/sdicon"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:layout_marginStart="120px"
+                            android:layout_marginTop="0px"
+                            app:srcCompat="@drawable/sd_storage_default" />
+
+                        <TextView
+                            android:id="@+id/sdText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20px"
+                            android:layout_marginTop="0px"
+                            android:text="Micro SD"
+                            android:textColor="#FAF6E5"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="552px"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:layout_marginTop="33px"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="@string/file_list"
+                        android:textColor="#FAF6E5"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/filelistly"
+                        android:layout_width="match_parent"
+                        android:layout_height="515px"
+                        android:layout_marginTop="33px"
+                        android:orientation="vertical">
+
+
+                        <!--androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/filelist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="visible"
+                               -->
+                        <ListView
+                            android:id="@+id/dd"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:divider="#00000000"
+                            android:dividerHeight="25px"
+                            android:nextFocusRight="@id/PlayButton" />
+
+                        <LinearLayout
+                            android:id="@+id/Listitem1"
+                            android:layout_width="match_parent"
+                            android:layout_height="64px"
+                            android:background="@drawable/list_hover"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/listicomtext1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="85px"
+                                android:layout_marginTop="0px"
+                                android:layout_weight="0"
+                                android:text="Filename.mp4"
+                                android:textColor="#FAF6E5"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Listitem2"
+                            android:layout_width="match_parent"
+                            android:layout_height="64px"
+                            android:layout_marginTop="25px"
+                            android:layout_weight="0"
+                            android:background="@drawable/list_choose"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/listicomtext2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="85px"
+                                android:layout_marginTop="0px"
+                                android:layout_weight="0"
+                                android:text="Filename.mp4"
+                                android:textColor="#FAF6E5"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="620px"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="52px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:layout_marginTop="33px"
+                        android:text="PlayList"
+                        android:textColor="#FAF6E5"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ListView
+                        android:id="@+id/playlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="515px"
+                        android:layout_marginTop="33px"
+                        android:background="@drawable/playlist" />
+
+                    <LinearLayout
+                        android:id="@+id/playlistlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="515px"
+                        android:layout_marginTop="33px"
+                        android:background="@drawable/playlist"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+                            <LinearLayout
+                                android:id="@+id/PlayListContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" />
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buttonlayout"
+                        android:layout_width="620px"
+                        android:layout_height="77px"
+                        android:layout_marginTop="33px"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/PlayButton"
+                            android:layout_width="297px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:background="@drawable/play_default"
+                            android:nextFocusRight="@id/SeamlessButton"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/SeamlessButton"
+                            android:layout_width="297px"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="26px"
+                            android:layout_weight="0"
+                            android:background="@drawable/seam_default"
+                            android:nextFocusLeft="@id/PlayButton"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
