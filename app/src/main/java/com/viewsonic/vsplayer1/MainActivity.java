@@ -465,6 +465,10 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
+                RandomMode=0;
+                RandonButton.setBackgroundResource(R.drawable.pb1_hover);
+                //if(PlayList.size()>0)
+
             }});        PlayButton.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
